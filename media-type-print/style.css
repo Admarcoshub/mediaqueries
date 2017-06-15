@@ -1,0 +1,49 @@
+body {
+	display:flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.table {
+	width:100%;
+
+}
+
+.table-header,
+.table-body {
+	display:grid;
+	grid-template-columns: repeat(3 , 1fr);
+	grid-template-rows: auto; 
+}
+
+
+.table-header {	
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.table-header {
+	background: grey;
+	color: white;
+}
+
+.table-header .col {
+	border: 1px solid black;
+	border: 1px solid black;
+	text-align: center;
+}
+
+.tabla-body .col {
+	text-align: center;
+}
+
+
+@media print {
+	.tabla-header {
+		background: white;
+		color: black;
+	}
+	.logo {
+		display:none;
+	}
+}
